@@ -27,7 +27,40 @@
             <h6>Kepada Bapak/Ibu/Saudara/i</h6>
             <h4>Nama Tamu</h4>
             <div class="simply-countdown"></div>
-            <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
+            <a href="#undangan" class="btn btn-lg mt-4"> Lihat Undangan </a>
+         </div>
+      </section>
+
+      <ul class="nav justify-content-center myNavbar fs-4 bg-dark fixed-bottom">
+         <li class="nav-item">
+            <a class="nav-link" href="#mempelai">Home</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#acara">Acara</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#cerita">Cerita</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#galery">Galery</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#rsvp">RSVP</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="#hadiah">Hadiah</a>
+         </li>
+      </ul>
+
+      <section id="home" class="home">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-md-8 text-center">
+                  <h2>Acara Pernikahan</h2>
+                  <h3>Diselenggarakan pada 10 Oktober 2023 di Palangkaraya, Kalimantan Tengah</h3>
+                  <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu/Saudara/i, untuk berkenan hadir pada acara pernikahan kami</p>
+               </div>
+            </div>
          </div>
       </section>
 
@@ -41,7 +74,7 @@
             if (i < judul.length) {
                document.querySelector('.judul').innerHTML += judul.charAt(i)
                i++
-               setTimeout(ketik, 150)
+               setTimeout(ketik, 200)
             }
          }
          ketik()
@@ -61,6 +94,20 @@
                seconds: { singular: 'Detik', plural: 'Detik' },
             },
          })
+      </script>
+
+      <script>
+         window.onscroll = function () {
+            // Ambil elemen navbar
+            var navbar = document.querySelector('.myNavbar')
+
+            // Jika scroll mencapai ambang tertentu (misalnya 100 piksel dari atas), tambahkan kelas "fixed-bottom", jika tidak, hapus kelas "fixed-bottom"
+            if (window.pageYOffset >= 100) {
+               navbar.classList.add('fixed-bottom')
+            } else {
+               navbar.classList.remove('fixed-bottom')
+            }
+         }
       </script>
    </body>
 </html>

@@ -10,13 +10,18 @@ body {
    min-height: 2000px;
 }
 
+.btn:hover {
+   box-shadow: #ffe569 -1px 1px 30px 15px;
+}
+
 .hero::before {
    content: '';
-   min-width: 100%;
    position: absolute;
    left: 0;
    top: 0;
-   background-image: url(img/weding1.jpg);
+   width: 100%;
+   height: 100%;
+   background-image: url(img/wedding.jpg);
    background-size: cover;
    background-position: center;
    z-index: -1;
@@ -31,7 +36,7 @@ body {
 
 /* judul pasangan */
 .judul {
-   color: black;
+   color: white;
    font-size: 40px;
    text-align: center;
    font-size: 5rem;
@@ -41,9 +46,8 @@ body {
 
 .hero h6,
 .hero h4 {
-   text-shadow: var(--shadow);
-   color: black;
-   font-weight: bold;
+   text-shadow: black 2px 2px;
+   color: white;
 }
 
 .hero h4 {
@@ -66,6 +70,43 @@ body {
    color: var(--bg);
 }
 
+.myNavbar a {
+   color: white;
+}
+
+.myNavbar a:hover {
+   background-color: var(--gold);
+   color: black;
+   border-radius: 10px;
+}
+
+.home {
+   background-image: url(img/bg.jpg);
+   background-size: cover;
+   background-position: center;
+   min-height: 100vh;
+   padding-top: 80px;
+   padding-bottom: 10rem;
+}
+
+.home h2 {
+   color: var(--gold);
+   font-family: 'sacramento';
+   font-size: 5rem;
+   font-weight: bold;
+}
+.home h3 {
+   color: #444;
+   font-size: 1.5rem;
+   margin-buttom: 1rem;
+   font-weight: bold;
+}
+
+.home p {
+   font-size: 1.1rem;
+   color: #666;
+}
+
 /* Responsive */
 /* Media Query */
 
@@ -77,10 +118,6 @@ body {
 
    .simply-countdown > .simply-section {
       padding: 70px;
-   }
-
-   .hero::before {
-      height: 100%;
    }
 }
 
@@ -94,24 +131,16 @@ body {
       padding: 60px;
       margin: 5px;
    }
-
-   .hero::before {
-      height: 100%;
-   }
 }
 
 /* Hp */
 @media (max-width: 576px) {
    html {
-      font-size: 60%;
+      font-size: 55%;
    }
 
    .simply-countdown > .simply-section {
       padding: 35px;
       margin: 2px;
-   }
-
-   .hero::before {
-      height: 100%;
    }
 }
