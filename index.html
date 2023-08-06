@@ -25,7 +25,6 @@
       <section id="hero" class="hero mx-auto p-3 w-100 h-100 text-center d-flex justify-content-center align-items-center text-white">
          <div>
             <div class="judul"></div>
-
             <h6>Kepada Yth,</h6>
             <h6>Kepada Bapak/Ibu/Saudara/i</h6>
             <h4>Nama Tamu</h4>
@@ -34,26 +33,31 @@
          </div>
       </section>
 
-      <ul class="nav justify-content-center myNavbar bg-black fixed-bottom">
-         <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="#acara">Acara</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="#cerita">Cerita</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="#galery">Galery</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="#rsvp">RSVP</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="#hadiah">Hadiah</a>
-         </li>
-      </ul>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-md bg-transparent sticky-top myNavbar">
+         <div class="container">
+           <a class="navbar-brand" href="#">Zayn & Bella</a>
+           <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+             <div class="offcanvas-header">
+               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Zayn & Bella</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+             </div>
+             <div class="offcanvas-body ">
+               <div class="navbar-nav ms-auto">
+                  <a class="nav-link" href="#home">Home</a>
+                  <a class="nav-link" href="#info">Info</a>
+                  <a class="nav-link" href="#story">Story</a>
+                  <a class="nav-link" href="#galery">Galery</a>
+                  <a class="nav-link" href="#rvsp">RVSP</a>
+                  <a class="nav-link" href="#hadiah">Hadiah</a>
+                </div>
+             </div>
+           </div>
+         </div>
+       </nav>
 
       <section id="home" class="home">
          <div class="container">
@@ -71,7 +75,7 @@
                <div class="col-lg-6">
                   <div class="row">
                      <div class="col-8 text-end">
-                        <h3>Muhammad Rionel</h3>
+                        <h3>Muhammad Zayn</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident aut tenetur, saepe vel temporibus quasi consequatur aliquid.</p>
                         <p>
                            Putra dari Bpk. Ngadrianto <br />
@@ -93,8 +97,8 @@
                      <div class="col-4">
                         <img src="img/cewe.jpg" alt="Pasangan" class="img-responsive rounded-circle" />
                      </div>
-                     <div class="col-8 text-start">
-                        <h3>Pasangan</h3>
+                     <div class="col-8 text-start mt-5">
+                        <h3>Bella Aisyah Fatimah</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident aut tenetur, saepe vel temporibus quasi consequatur aliquid.</p>
                         <p>
                            Putra dari Bpk. Barangja <br />

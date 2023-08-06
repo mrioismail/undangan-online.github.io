@@ -70,15 +70,27 @@ body {
    color: var(--bg);
 }
 
-.myNavbar a {
-   color: white;
-   font-size: 1.7rem;
+.myNavbar {
+   background-color: rgba(255, 255, 255, 0.4rem) !important;
+   backdrop-filter: blur(4px);
 }
 
-.myNavbar a:hover {
-   background-color: var(--gold);
-   color: black;
-   border-radius: 10px;
+.myNavbar .offcanvas {
+   height: 100vh;
+}
+
+.myNavbar .navbar-brand,
+.myNavbar .offcanvas-title {
+   font-family: 'sacramento';
+   font-weight: bold;
+   font-size: 3.2rem;
+   text-shadow: white 2px 2px;
+}
+
+.myNavbar .nav-link {
+   font-weight: 600;
+   text-transform: uppercase;
+   text-shadow: white 2px 2px;
 }
 
 .home {
@@ -215,6 +227,11 @@ body {
    .simply-countdown > .simply-section {
       padding: 60px;
       margin: 5px;
+   }
+
+   .myNavbar .nav-link {
+      font-size: 2rem;
+      text-align: center;
    }
 }
 
