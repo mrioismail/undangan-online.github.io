@@ -71,8 +71,7 @@ body {
 }
 
 .myNavbar {
-   background-color: rgba(255, 255, 255, 0.4rem) !important;
-   backdrop-filter: blur(4px);
+   background-color: var(--gold);
 }
 
 .myNavbar .offcanvas {
@@ -84,13 +83,11 @@ body {
    font-family: 'sacramento';
    font-weight: bold;
    font-size: 3.2rem;
-   text-shadow: white 2px 2px;
 }
 
 .myNavbar .nav-link {
-   /* font-weight: 600; */
+   font-weight: 600;
    text-transform: uppercase;
-   text-shadow: white 2px 2px;
 }
 
 .home {
