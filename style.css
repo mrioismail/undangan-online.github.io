@@ -46,7 +46,7 @@ body {
 
 .hero h6,
 .hero h4 {
-   text-shadow: black 2px 2px;
+   font-weight: bold;
    color: white;
 }
 
@@ -88,7 +88,7 @@ body {
 }
 
 .myNavbar .nav-link {
-   font-weight: 600;
+   /* font-weight: 600; */
    text-transform: uppercase;
    text-shadow: white 2px 2px;
 }
@@ -230,8 +230,12 @@ body {
    }
 
    .myNavbar .nav-link {
-      font-size: 2rem;
+      font-size: 1rem;
       text-align: center;
+   }
+
+   .myNavbar .navbar-brand {
+      font-size: 1.7rem;
    }
 }
 
@@ -244,5 +248,21 @@ body {
    .simply-countdown > .simply-section {
       padding: 35px;
       margin: 2px;
+   }
+
+   .myNavbar .nav-link {
+      font-size: 1rem;
+      text-align: center;
+   }
+
+   .myNavbar .navbar-brand {
+      font-size: 1.7rem;
+   }
+
+   .info h2 {
+      font-family: 'sacramento';
+      color: var(--gold);
+      font-size: 4rem;
+      font-weight: bold;
    }
 }
