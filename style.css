@@ -1,17 +1,17 @@
 :root {
-   --gold: #ffe569;
+   --gold: #f14e95;
    --bg: #312f2f;
    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
 
 body {
    font-size: 1.2rem;
-   font-family: 'Edu SA Beginner', cursive;
-   min-height: 2000px;
+   font-family: Arial, Helvetica, sans-serif;
+   min-height: 4000px;
 }
 
 .btn:hover {
-   box-shadow: #ffe569 -1px 1px 30px 15px;
+   transform: scale(1.5);
 }
 
 .hero::before {
@@ -41,7 +41,7 @@ body {
    text-align: center;
    font-size: 5rem;
    font-family: 'Sacramento', cursive;
-   text-shadow: #ffe569 3px 3px 5px;
+   text-shadow: #f14e95 3px 3px 5px;
 }
 
 .hero h6,
@@ -63,6 +63,7 @@ body {
    background-color: var(--gold);
    font-weight: bold italic;
    box-shadow: var(--shadow);
+   color: white;
 }
 
 .hero a:hover {
@@ -83,11 +84,13 @@ body {
    font-family: 'sacramento';
    font-weight: bold;
    font-size: 3.2rem;
+   color: white;
 }
 
 .myNavbar .nav-link {
    font-weight: 600;
    text-transform: uppercase;
+   color: white;
 }
 
 .home {
@@ -100,7 +103,8 @@ body {
    padding-bottom: 10rem;
 }
 
-.home h2 {
+.home h2,
+.story h2 {
    color: var(--gold);
    font-family: 'sacramento';
    text-shadow: black 2px 2px;
@@ -164,6 +168,7 @@ body {
    color: var(--gold);
    font-size: 5rem;
    font-weight: bold;
+   margin-bottom: 50px;
 }
 
 .info .card {
@@ -187,6 +192,25 @@ body {
    border-top: 1px solid #999;
    font-size: 0.9rem;
    font-weight: 300;
+}
+
+.story {
+   padding-top: 8rem;
+   padding-bottom: 8rem;
+}
+
+.story span {
+   font-size: 1rem;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: #666;
+   display: block;
+}
+
+.story p {
+   font-size: 1rem;
+   font-weight: 100;
+   color: #666;
 }
 
 /* Responsive */
@@ -236,7 +260,7 @@ body {
    }
 }
 
-/* Hp */
+/* Mobile (HP) */
 @media (max-width: 576px) {
    html {
       font-size: 55%;
