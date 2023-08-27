@@ -29,7 +29,7 @@
             <h6>Kepada Bapak/Ibu/Saudara/i</h6>
             <h4>Nama Tamu</h4>
             <div class="simply-countdown"></div>
-            <a href="#home" class="btn btn-lg mt-4"> Lihat Undangan</a>
+            <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()"> Lihat Undangan</a>
          </div>
       </section>
 
@@ -334,6 +334,31 @@
             } else {
                navbar.classList.remove('fixed-bottom')
             }
+         }
+      </script>
+
+      <script>
+         const rootElement = document.querySelector(':root');
+
+         function disableScroll(){
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            scrollLetf = window.pageXOffset || document.documentElement.scrollLetf;
+
+            window.onscroll =function() {
+               window.scrollTo(scrollTop, scrollLetf)
+            }
+
+            rootElement.style.scrollBehavior = 'auto'
+         }
+
+         function enableScroll(){
+               window.onscroll = function(){}
+                  rootElement.style.scrollBehavior = 'smooth'
+                  localStorage.setItem('opened', 'true');
+            }
+
+         if(!localStorage.getItem('opened')){
+            disableScroll();
          }
       </script>
    </body>
