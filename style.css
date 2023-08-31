@@ -7,7 +7,7 @@
 body {
    font-size: 1.2rem;
    font-family: Arial, Helvetica, sans-serif;
-   min-height: 4000px;
+   min-height: 6000px;
 }
 
 .btn:hover {
@@ -106,7 +106,9 @@ body {
 
 .home h2,
 .story h2,
-.galery h2 {
+.galery h2,
+.rsvp h2,
+.hadiah h2 {
    color: var(--gold);
    font-family: 'sacramento';
    text-shadow: black 2px 2px;
@@ -197,13 +199,16 @@ body {
 }
 
 .story,
-.galery {
+.galery,
+.rsvp,
+.hadiah {
    padding-top: 10rem;
    padding-bottom: 8rem;
 }
 
 .story span,
-.galery span {
+.galery span,
+.hadiah span {
    font-size: 1rem;
    text-transform: uppercase;
    letter-spacing: 1px;
@@ -212,7 +217,9 @@ body {
 }
 
 .story p,
-.galery p {
+.galery p,
+.rsvp p,
+.hadiah p {
    font-size: 1rem;
    font-weight: 100;
    color: #424242;
@@ -298,6 +305,54 @@ body {
 
 .galery {
    background-color: #999;
+}
+
+.rsvp {
+   background-color: var(--bg);
+}
+
+.rsvp p {
+   font-size: 1rem;
+   color: white;
+   text-decoration: underline;
+}
+
+.rsvp .form-label {
+   color: white;
+}
+
+.rsvp button {
+   background-color: var(--gold);
+   color: white;
+   border: 1px solid var(--gold);
+   margin-top: 20px;
+}
+
+.rsvp button:hover {
+   background-color: white;
+   color: var(--gold);
+   border: 1px solid white;
+}
+
+footer {
+   padding: 1rem;
+   background-color: var(--gold);
+   color: white;
+}
+
+footer a {
+   color: var(--bg);
+   font-weight: bold;
+   text-decoration: none;
+}
+
+footer a:hover {
+   color: white;
+}
+
+footer li {
+   list-style: none;
+   display: inline;
 }
 
 /* Responsive */
@@ -447,5 +502,9 @@ body {
 
    .timeline li .timeline-panel4 {
       width: 60%;
+   }
+
+   .rsvp h2 {
+      font-size: 34px;
    }
 }
